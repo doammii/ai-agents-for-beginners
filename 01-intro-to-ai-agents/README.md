@@ -31,7 +31,8 @@ After completing this lesson, you should be able to:
 
 ### What are AI Agents?
 
-AI Agents are **systems** that enable **Large Language Models(LLMs)** to **perform actions** by extending their capabilities by giving LLMs **access to tools** and **knowledge**.
+AI Agents are **systems** that enable **Large Language Models(LLMs)** to **perform actions** by extending their capabilities by giving LLMs **access to tools** and **knowledge**. 
+- LLM & Memory & Tools
 
 Let's break this definition into smaller parts:
 
@@ -42,13 +43,13 @@ Let's break this definition into smaller parts:
 
 ![What Are AI Agents?](./images/what-are-ai-agents.png)
 
-**Large Language Models** - The concept of agents existed before the creation of LLMs. The advantage of building AI Agents with LLMs is their ability to interpret human language and data. This ability enables LLMs to interpret environmental information and define a plan to change the environment.
+**Large Language Models** - The concept of agents existed before the creation of LLMs. The advantage of building AI Agents with LLMs is their ability to interpret human language and data. This ability enables LLMs to interpret environmental information and define a plan to change the environment. - 추론 역할 담당, 사용자 요청을 파악하고, 작업 완료 위한 계획을 세우고, 행동을 수행함.
 
-**Perform Actions** - Outside of AI Agent systems, LLMs are limited to situations where the action is generating content or information based on a user's prompt. Inside AI Agent systems, LLMs can accomplish tasks by interpreting the user's request and using tools that are available in their environment.
+**Perform Actions** - Outside of AI Agent systems, LLMs are limited to situations where the action is generating content or information based on a user's prompt. Inside AI Agent systems, LLMs can accomplish tasks by interpreting the user's request and using tools that are available in their environment. - api 통한 서비스 접근, 행동 결정에 필요한 데이터, function calling 등등
 
 **Access To Tools** - What tools the LLM has access to is defined by 1) the environment it's operating in and 2) the developer of the AI Agent. For our travel agent example, the agent's tools are limited by the operations available in the booking system, and/or the developer can limit the agent's tool access to flights.
 
-**Memory+Knowledge** - Memory can be short-term in the context of the conversation between the user and the agent. Long-term, outside of the information provided by the environment, AI Agents can also retrieve knowledge from other systems, services, tools, and even other agents. In the travel agent example, this knowledge could be the information on the user's travel preferences located in a customer database.
+**Memory+Knowledge** - Memory can be short-term in the context of the conversation between the user and the agent. Long-term, outside of the information provided by the environment, AI Agents can also retrieve knowledge from other systems, services, tools, and even other agents. In the travel agent example, this knowledge could be the information on the user's travel preferences located in a customer database. - 단기(대화 맥락 저장) & 장기(데이터 수집으로 에이전트 성능 향상상) - context memory 활용
 
 ### The different types of agents
 
@@ -100,11 +101,3 @@ This course is divided into some of the current popular Agentic patterns.
 Agentic Frameworks allow developers to implement agentic patterns through code. These frameworks offer templates, plugins, and tools for better AI Agent collaboration. These benefits provide abilities for better observability and troubleshooting of AI Agent systems.
 
 In this course, we will explore the research-driven AutoGen framework and the production-ready Agent framework from Semantic Kernel.
-
-## Previous Lesson
-
-[Course Setup](../00-course-setup/README.md)
-
-## Next Lesson
-
-[Exploring Agentic Frameworks](../02-explore-agentic-frameworks/README.md)
