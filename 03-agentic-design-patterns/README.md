@@ -29,12 +29,15 @@ After completing this lesson, you will be able to:
 3. Understand how to build an agent using the Agentic Design Principles
 
 ## The Agentic Design Principles
-
-![Agentic Design Principles](./images/agentic-design-principles.png)
+- space
+- time
+- core
 
 ### Agent (Space)
 
-This is the environment in which the agent operates. These principles inform how we design agents for engaging in physical and digital worlds.
+This is the *environment* in which the agent operates. These principles inform how we design agents for engaging in physical and digital worlds. 
+- agent가가 작업하는 환경 / event, agent, knowledge 연결, 사용자의 필요에 따른 유연성
+- UI/UX 디자인 통해 agent 사용 방법, 용도, 특정 제한 사항 등에 대한 지침 제공
 
 - **Connecting, not collapsing** – help connect people to other people, events, and actionable knowledge to enable collaboration and connection.
 - Agents help connect events, knowledge, and people.
@@ -47,11 +50,12 @@ This is the environment in which the agent operates. These principles inform how
 
 ### Agent (Time)
 
-This is how the agent operates over time. These principles inform how we design agents interacting across the past, present, and future.
+This is how the agent operates over time. These principles inform how we design agents interacting across the past, present, and future. - 시간이 지남에 따라 개선(과거 event 연결 및 reflection design)
 
 - **Past**: Reflecting on history that includes both state and context.
   - Agent provides more relevant results based on analysis of richer historical data beyond only the event, people, or states.
   - Agent creates connections from past events and actively reflects on memory to engage with current situations.
+  - 과거 prompt와의 상호작용 기록 표시
 - **Now**: Nudging more than notifying.
   - Agent embodies a comprehensive approach to interacting with people. When an event happens, the Agent goes beyond static notification or other static formality. Agent can simplify flows or dynamically generate cues to direct the user’s attention at the right moment.
   - Agent delivers information based on contextual environment, social and cultural changes and tailored to user intent.
@@ -68,7 +72,7 @@ These are the key elements in the core of an agent’s design.
 - **Embrace uncertainty but establish trust**.
   - A certain level of Agent uncertainty is expected. Uncertainty is a key element of agent design.
   - Trust and transparency are foundational layers of Agent design.
-  - Humans are in control of when the Agent is on/off and Agent status is clearly visible at all times.
+  - Humans are in control of when the Agent is on/off and Agent status is clearly visible at all times.(가시적 제어 및 피드백)
 
 ## The Guidelines to Implement These Principles
 
@@ -91,11 +95,3 @@ Imagine you are designing a Travel Agent, here is how you could think about usin
 - <a href="https://openai.com" target="_blank">Practices for Governing Agentic AI Systems | OpenAI</a>
 - <a href="https://microsoft.com" target="_blank">The HAX Toolkit Project - Microsoft Research</a>
 - <a href="https://responsibleaitoolbox.ai" target="_blank">Responsible AI Toolbox</a>
-
-## Previous Lesson
-
-[Exploring Agentic Frameworks](../02-explore-agentic-frameworks/README.md)
-
-## Next Lesson
-
-[Tool Use Design Pattern](../04-tool-use/README.md)
