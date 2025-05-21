@@ -82,10 +82,11 @@ Let's use the example of getting the current time in a city to illustrate:
     )
     ```
 
-1. **Create a Function Schema**:
+2. **Create a Function Schema**:
 
     Next we will define a JSON schema that contains the function name, description of what the function does, and the names and descriptions of the function parameters.
     We will then take this schema and pass it to the client created previously, along with the users request to find the time in San Francisco. What's important to note is that a **tool call** is what is returned, **not** the final answer to the question. As mentioned earlier, the LLM returns the name of the function it selected for the task, and the arguments that will be passed to it.
+    - description 작성해줘야 함.
 
     ```python
     # Function description for the model to read
@@ -138,7 +139,7 @@ Let's use the example of getting the current time in a city to illustrate:
     ChatCompletionMessage(content=None, role='assistant', function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_pOsKdUlqvdyttYB67MOj434b', function=Function(arguments='{"location":"San Francisco"}', name='get_current_time'), type='function')])
     ```
   
-1. **The function code required to carry out the task:**
+3. **The function code required to carry out the task:**
 
     Now that the LLM has chosen which function needs to be run the code that carries out the task needs to be implemented and executed.
     We can implement the code to get the current time in Python. We will also need to write the code to extract the name and arguments from the response_message to get the final result.
