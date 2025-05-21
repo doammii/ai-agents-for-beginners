@@ -27,6 +27,7 @@ After completing this lesson, you will be able to:
 ## What is the Tool Use Design Pattern?
 
 The **Tool Use Design Pattern** focuses on giving LLMs the ability to interact with external tools to achieve specific goals. Tools are code that can be executed by an agent to perform actions. A tool can be a simple function such as a calculator, or an API call to a third-party service such as stock price lookup or weather forecast. In the context of AI agents, tools are designed to be executed by agents in response to **model-generated function calls**.
+- LLM이 사용자의 요청을 완료하려면 외부 tool과의 상호작용 필요함.
 
 ## What are the use cases it can be applied to?
 
@@ -316,11 +317,3 @@ Running the app in a secure environment further enhances protection. In enterpri
 - <a href="https://learn.microsoft.com/semantic-kernel/concepts/ai-services/chat-completion/function-calling/?pivots=programming-language-python#1-serializing-the-functions" target="_blank">Semantic Kernel Function Calling Tutorial</a>
 - <a href="https://github.com/microsoft/semantic-kernel/blob/main/python/samples/getting_started_with_agents/openai_assistant/step3_assistant_tool_code_interpreter.py" target="_blank">Semantic Kernel Code Interpreter</a>
 - <a href="https://microsoft.github.io/autogen/dev/user-guide/core-user-guide/components/tools.html" target="_blank">Autogen Tools</a>
-
-## Previous Lesson
-
-[Understanding Agentic Design Patterns](../03-agentic-design-patterns/README.md)
-
-## Next Lesson
-
-[Agentic RAG](../05-agentic-rag/README.md)
