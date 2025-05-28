@@ -28,7 +28,7 @@ Let's first look at building safe agentic applications. Safety means that the AI
 
 If you have ever built an AI application using Large Language Models (LLMs), you know the importance of designing a robust system prompt or system message. These prompts establish the meta rules, instructions, and guidelines for how the LLM will interact with the user and data.
 
-For AI Agents, the system prompt is even more important as the AI Agents will need highly specific instructions to complete the tasks we have designed for them.
+For AI Agents, the system prompt is even more important as the AI Agents will need highly specific instructions to complete the tasks we have designed for them. -> "효과적인 프롬프트를 확장 가능하고 반복 가능한 방식으로 구축하는 한 가지 방법은 시스템 메시지 프레임워크를 사용하는 것" (책임 쉽게 추가/제거, Agent prompt 양 확장 등등 용이이)
 
 To create scalable system prompts, we can use a system message framework for building one or more agents in our application:
 
@@ -159,6 +159,8 @@ Another effective way to build trustworthy AI Agent systems is using a Human-in-
 
 ![Human in The Loop](./images/human-in-the-loop.png)
 
+- HITL 아키텍쳐: AI agent들이 협력하는 과정에 human user 참여
+
 Here is a code snippet using AutoGen to show how this concept is implemented:
 
 ```python
@@ -191,11 +193,3 @@ Building trustworthy AI agents requires careful design, robust security measures
 - <a href="https://learn.microsoft.com/azure/ai-studio/concepts/evaluation-approach-gen-ai" target="_blank">Evaluation of generative AI models and AI applications</a>
 - <a href="https://learn.microsoft.com/azure/ai-services/openai/concepts/system-message?context=%2Fazure%2Fai-studio%2Fcontext%2Fcontext&tabs=top-techniques" target="_blank">Safety system messages</a>
 - <a href="https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2022/06/Microsoft-RAI-Impact-Assessment-Template.pdf?culture=en-us&country=us" target="_blank">Risk Assessment Template</a>
-
-## Previous Lesson
-
-[Agentic RAG](../05-agentic-rag/README.md)
-
-## Next Lesson
-
-[Planning Design Pattern](../07-planning-design/README.md)
